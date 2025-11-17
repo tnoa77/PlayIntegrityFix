@@ -383,7 +383,8 @@ init(JavaVM *vm, const std::string &gmsDir, bool isGmsUnstable, bool isVending) 
     } else if (isVending) {
         if (spoofVendingBuild) {
             UpdateBuildFields();
-        } else if (spoofVendingSdk) {
+        } 
+        if (spoofVendingSdk) {
             doSpoofVending();
         }
     }
